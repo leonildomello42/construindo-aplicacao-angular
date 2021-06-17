@@ -1,0 +1,20 @@
+<jad-header></jad-header>
+
+<h1>
+  {{title}}
+</h1>
+
+<!--
+<jad-student name="Luke" [isJedi]="true"></jad-student>
+<jad-student name="Han Solo" [isJedi]="false"></jad-student>
+<jad-student name="Leia" [isJedi]="false"></jad-student>
+-->
+
+<!--
+<jad-student [student] = "luke"></jad-student>
+<jad-student [student] = "leia"></jad-student>
+<jad-student [student] = "han"></jad-student>
+-->
+
+<jad-student *ngFor= "let stud of students" [student]="stud"></jad-student>
+<jad-student></jad-student>
