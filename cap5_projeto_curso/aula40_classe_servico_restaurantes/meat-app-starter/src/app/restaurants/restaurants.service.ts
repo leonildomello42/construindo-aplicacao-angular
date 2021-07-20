@@ -1,11 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Restaurant } from './restaurant/restaurant.model';
+import { from } from "rxjs/observable/from";
+import { Restaurant } from "./restaurant/restaurant.model";
 
-@Component({
-  selector: 'mt-restaurants',
-  templateUrl: './restaurants.component.html'
-})
-export class RestaurantsComponent implements OnInit {
+export class RestaurantsService {
 
   rests: Restaurant[] = [
     {
@@ -25,9 +21,9 @@ export class RestaurantsComponent implements OnInit {
       imagePath: "assets/img/restaurants/burgerhouse.png"
     }]
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  restaurants(): Restaurant[] {
+    return this.rests;
   }
-
 }
