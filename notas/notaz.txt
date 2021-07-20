@@ -5,4 +5,4 @@
 -- ng serve npm start /localhost:4200
 -- ng g c header
 -- sudo npm install -g json-server
--- json-server db.js
+-- json-server db.json
