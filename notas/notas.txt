@@ -1,0 +1,8 @@
+# Notas
+
+--npm install
+-- ng new jedi-academy --prefix=jad
+-- ng serve npm start /localhost:4200
+-- ng g c header
+-- sudo npm install -g json-server
+-- json-server db.json
